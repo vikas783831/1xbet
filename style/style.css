@@ -1,138 +1,119 @@
 /* Variables */
-:root {  --mainColor: #0c314d;  --hoverColor: #1a5684;
-  --white: #fff;  --primaryColor: #668a28;}
-/* Global Rules */
+:root {
+    --mainColor: #0c314d;
+    --hoverColor: #1a5684;
+    --white: #fff;
+    --primaryColor: #668a28;
+    --textColor: #333;
+    --lightGray: #f5f5f5;
+}
 
-/* Mob screen */
-@media (min-width: 576px) {
- 
-/* Small Screen */
-@media (min-width: 768px) {
-  
-/* Medium Screen */
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--textColor);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primaryColor);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--hoverColor);
+}
+
+/* Header Styles */
+.header {
+    background-color: var(--mainColor);
+    color: white;
+    padding: 10px 0;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--lightGray);
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+    }
+    
+    .main-nav {
+        flex-direction: column;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
 @media (min-width: 992px) {
- 
-/* Large Screen */
+    .container {
+        width: 960px;
+    }
+}
+
 @media (min-width: 1200px) {
-  .container {    width: 1140px;  }
-}
-/* Very Large Screen */
-@media (min-width: 1400px) {
-  
-}
-/* header style */
-
-@media (max-width: 767px) {
-  
-}
-
-@media (max-width: 991px) { }
-
-@media (max-width: 767px) {
-  
-
- 
-}
-@media (max-width: 767px) {
-  
-}
-
-@media (max-width: 767px) {
-  
-}
-
-@media (max-width: 767px) {  
-  
-}
-
-@media (max-width: 767px) {
- 
-}
-
-@media (max-width: 992px) {
-  
-}
-
-@media (max-width: 992px) {
- 
-}
-
-@media (max-width: 992px) {
-}
-
-
-/* landing style */
-
-@media (max-width: 767px) {
-
-}
-
-@media (max-width: 767px) {
-
-}
-
-/* slider style */
-
-@media (max-width: 767px) {
-  
-}
-
-/* to navigate */
-
-/* slider animation position */
-
-/* live bets style */
-
-@media (max-width: 575px) {
-  
-}
-
-@media (max-width: 575px) {
-  
-}
-
-@media (max-width: 575px) {
-  
-@media (max-width: 575px) {
-  
-}
-
-/* live bets static style */
-
-@media (max-width: 992px) {
-  
-}
-
-@media (max-width: 992px) {
-  
-}
-
-/* static row style */
-@media (max-width: 992px) {
-  
-}
-
-/* sports book style */
-@media (max-width: 575px) {
-
-}
-
-@media (max-width: 575px) {
-  
-}
-/* usa static style */
-
-/* footer style */
-@media (max-width: 767px) {
-  
-
-}
-@media (max-width: 575px) {
-  
-@media (max-width: 767px) {
-  
-}
-
-@media (max-width: 767px) {
- 
+    .container {
+        width: 1140px;
+    }
 }
