@@ -1,72 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1XBET – Betting company ᐉ Online sports betting 1xBet</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="icon" href="images/xbeticon.ico" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1xBet - Online Sports Betting</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
-    <header class="header">
+    <!-- Top Notification Bar -->
+    <div class="top-notification">
         <div class="container">
-            <div class="top-bar">
-                <div class="bonus">4000 EGP BONUS</div>
-                <div class="auth">
-                    <button class="btn login">LOG IN</button>
-                    <button class="btn register">Registration</button>
-                </div>
-                <div class="time">01:10</div>
+            <span class="bonus-amount">4000 EGP BONUS</span>
+            <div class="top-links">
+                <a href="#" class="login-link">LOG IN</a>
+                <a href="#" class="register-link">Registration</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-top">
+                <div class="current-time">01:10</div>
                 <div class="language-selector">
-                    <!-- Language flags would go here -->
+                    <div class="language-flag active">
+                        <img src="images/england-icon.png" alt="EN">
+                    </div>
+                    <div class="language-flag">
+                        <img src="images/ethiopia-icon.png" alt="ET">
+                    </div>
+                    <!-- More language flags -->
                 </div>
             </div>
-            <nav class="main-nav">
+            
+            <div class="header-main">
                 <div class="logo">
-                    <img src="images/logo.png" alt="1xBet Logo">
+                    <img src="images/logo.png" alt="1xBet">
                 </div>
-                <ul class="nav-links">
-                    <li><a href="#">SPORTS</a></li>
-                    <li><a href="#">LIVE</a></li>
-                    <li><a href="#">PROMO</a></li>
-                    <!-- Other nav items -->
-                </ul>
-            </nav>
+                
+                <nav class="main-menu">
+                    <ul>
+                        <li class="active"><a href="#">SPORTS</a></li>
+                        <li><a href="#">LIVE</a></li>
+                        <li><a href="#">PROMO</a></li>
+                        <li><a href="#">CASINO</a></li>
+                        <li><a href="#">LIVE CASINO</a></li>
+                        <li><a href="#">1XGAMES</a></li>
+                        <li><a href="#">MORE <i class="fas fa-chevron-down"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <main class="main-content">
-        <section class="hero">
-            <div class="container">
-                <h1>200% BONUS ON THE 1ST DEPOSIT</h1>
-                <button class="btn cta">REGISTRATION</button>
-            </div>
-        </section>
-
-        <!-- Other sections would go here -->
-        <section class="promo-cards">
-            <!-- Promo cards would go here -->
-        </section>
-
-        <section class="live-bets">
-            <!-- Live bets content -->
-        </section>
-    </main>
-
-    <footer class="footer">
+    <!-- Main Banner -->
+    <section class="main-banner">
         <div class="container">
-            <div class="footer-links">
-                <!-- Footer links would go here -->
+            <div class="banner-content">
+                <h1>200% BONUS ON THE 1ST DEPOSIT</h1>
+                <button class="btn btn-register">REGISTRATION</button>
             </div>
-            <div class="legal">
-                <p>1xBet uses cookies to guarantee that your experience is as smooth as possible...</p>
+        </div>
+    </section>
+
+    <!-- Promo Blocks -->
+    <section class="promo-blocks">
+        <div class="container">
+            <div class="promo-grid">
+                <!-- Promo items would go here -->
             </div>
+        </div>
+    </section>
+
+    <!-- Live Bets Section -->
+    <section class="live-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>LIVE BETS</h2>
+                <div class="live-search">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+            <!-- Live bets content -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <!-- Footer content -->
         </div>
     </footer>
 </body>
